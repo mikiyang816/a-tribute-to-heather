@@ -1,12 +1,12 @@
 <body></body>
 <script>
   
-  function createGif(x, y) {
+  function createGif (x, y) {
     const gif = document.createElement('img')
     gif.src = 'sun.gif'
     gif.style.position = 'absolute'
     gif.style.top = y + 'px'
-    gif.style.left = Math.random() + window.innerWidth + 'px'
+    gif.style.left = x + 'px' 
     document.body.appendChild(gif)    
   }
  
@@ -17,7 +17,7 @@
   
 for (let i=0; i<100; i++) {
   const x = i * 150
- 	createGif(x, 100) // abstraction
+ 	createGif(x, 0) // abstraction
 	}
   
   document.body.style.backgroundColor='pink'
