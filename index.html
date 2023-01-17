@@ -2,17 +2,17 @@
 </body>
 <script>
   
-  function createGif() {
+  function createGif(x) {
     const gif = document.createElement('img')
     gif.src = 'sun.gif'
     gif.style.position = 'absolute'
-    gif.style.top = Math.random() * window.innertHeight + 'px'
+    gif.style.top = x + 'px'
     gif.style.left = Math.random() + window.innerWidth + 'px'
     document.body.appendChild(gif)    
   }
  
   for (let i=0; i<100; i++) {
-     createGif()   
+     createGif(200)   
   }
   
   document.body.style.backgroundColor='pink'
