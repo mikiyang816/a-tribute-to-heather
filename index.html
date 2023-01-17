@@ -15,24 +15,20 @@
   //createGif (300,0)
   //createGif (450,0)
   
-const num = 2
+	const gifWidth = 180
+  const gifHeight = 180
+  const gifOffsetX = 300
+	const num = window.innerWidth / gifWidth
+
+console.log(num)
 for (let i=0; i<num; i++) {
-  const gifWidth = 170
-  const gifHeight = 170
-  const x = i * gifWidth
+  const x = i * gifWidth - gifOffsetX
  	createGif(x, 0) // abstraction
 	}
   
   document.body.style.backgroundColor='pink'
   document.body.style.overflow = 'hidden'
 </script>
-
-
-
-
-
-
-
 
 
 
