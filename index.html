@@ -2,7 +2,7 @@
 <script>
   function createGif(x, y) {
     const gif = document.createElement('img')
-    gif.src = 'sun.gif'
+    gif.src = gifURL + '#' + Math.random ()
     gif.style.position = 'absolute'
     gif.style.top = y + 'px'
     gif.style.left = x + 'px'
