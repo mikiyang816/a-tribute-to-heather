@@ -2,7 +2,7 @@
 <script>
   function createGif(x, y) {
     const gif = document.createElement('img')
-    gif.src = gifURL + '#' + Math.random ()
+    gif.src = gifURL + '#' + Math.random () // trick the browser to load diff images when you in fact have only one image
     gif.style.position = 'absolute'
     gif.style.top = y + 'px'
     gif.style.left = x + 'px'
