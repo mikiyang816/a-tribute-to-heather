@@ -1,5 +1,15 @@
 
 <script>
+  
+  const gifWidth = 180
+  const gifHeight = 180
+  const gifOffsetX = 5
+  const gifOffsetY = -window.innerHeight * 0.0003
+  const numColumns = window.innerWidth / gifWidth
+  const numRows = window.innerHeight / gifHeight * 0.8
+	const gifURL = 'sun.gif'
+  
+
   function createGif(x, y) {
     const gif = document.createElement('img')
     gif.src = gifURL + '#' + Math.random () // trick the browser to load diff images when you in fact have only one image
@@ -13,14 +23,6 @@
   //createGif (150,0)
   //createGif (300,0)
   //createGif (450,0)
-
-  const gifWidth = 180
-  const gifHeight = 180
-  const gifOffsetX = 5
-  const gifOffsetY = -window.innerHeight * 0.0003
-  const numColumns = window.innerWidth / gifWidth
-  const numRows = window.innerHeight / gifHeight * 0.8
-	const gifURL = 'sun.gif'
   
   function setup() {
     for (let r = 0; r < numRows; r++) {
@@ -28,6 +30,7 @@
         const x = c * gifWidth - gifOffsetX
         const y = r * gifHeight - gifOffsetY
         createGif(x, y) // abstraction
+        console.log ('created gif')
     }
   }
 
